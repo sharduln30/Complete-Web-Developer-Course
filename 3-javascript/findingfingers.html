@@ -1,0 +1,42 @@
+<html>
+	
+	<head>
+	
+		<title>Javascript</title>
+
+		
+
+	</head>
+
+	<body>
+		
+		<p>Enter the no. of fingers</p>
+		 
+		 <p><input type="text" id="guess"></p>
+		 
+		 <p><button id="checkGuess">Try it!</button></p>
+		
+		<script type="text/javascript">
+		
+			document.getElementById("checkGuess").onclick = function() {
+			
+			var randomNumber = (Math.floor(Math.random() * 6));
+		
+			if (document.getElementById("guess").value == randomNumber) {
+			
+			alert("u got it!!!!! It is " + randomNumber);
+			
+			} else {
+			
+	
+			alert("Nope, the answer is " + randomNumber);
+			
+			}
+			
+			}
+		
+		</script>
+
+	</body>
+
+</html>
